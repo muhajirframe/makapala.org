@@ -27,7 +27,6 @@ module.exports = {
   */
   build: {
     postcss: [
-      require('postcss-simple-vars')(),
       require('postcss-responsive-type')()
     ],
     /*
