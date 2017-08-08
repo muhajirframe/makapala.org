@@ -15,6 +15,7 @@
   "dependencies": {
     "gsap": "^1.20.2",
     "nuxt": "^1.0.0-rc3",
+    "postcss-nested": "^2.1.0",
     "postcss-responsive-type": "^1.0.0"
   },
   "devDependencies": {
