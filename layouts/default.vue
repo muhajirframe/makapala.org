@@ -20,10 +20,14 @@ export default {
 <style>
 html {
   font-size: responsive;
+  line-height: responsive;
+  letter-spacing: responsive;
+  font-family: 'Roboto', sans-serif;
+  color: #555;
 }
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
 }
 </style>
