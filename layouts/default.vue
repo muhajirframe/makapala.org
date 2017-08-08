@@ -30,4 +30,8 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.wrapper {
+  min-height: 100vh;
+}
 </style>

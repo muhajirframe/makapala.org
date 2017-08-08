@@ -15,7 +15,7 @@
 
 <style scoped>
 .container {
-  height: 100vh;
+  min-height: inherit;
 
   display: flex;
   align-items: center;
@@ -29,6 +29,7 @@
 .title {
   font-size: 5rem;
   font-weight: 300;
+  letter-spacing: 0.1rem;
 }
 
 .subtitle {
@@ -42,7 +43,6 @@
   }
   .timnyawa {
     display: inline-block;
-
     line-height: 0rem;
     font-size: 1rem;
     font-weight: 300;
