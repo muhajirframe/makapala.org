@@ -25,8 +25,8 @@ export default {
     return {
       opened: false
     }
-    }
   }
+}
 </script>
 
 
@@ -47,9 +47,12 @@ export default {
   font-size: 2rem;
   text-align: right;
 
-  cursor: pointer;
-
   z-index: 200;
+
+  span {
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  }
 }
 
 .overlay {
@@ -66,7 +69,6 @@ export default {
   text-decoration: none;
   font-size: 2rem;
 }
-
 
 /*animation  */
 
