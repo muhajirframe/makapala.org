@@ -53,6 +53,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: #fff;
 }
 
 .link {
