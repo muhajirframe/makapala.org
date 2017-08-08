@@ -25,7 +25,7 @@ html {
   font-size: responsive;
   line-height: responsive;
   letter-spacing: responsive;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #555;
 }
 
