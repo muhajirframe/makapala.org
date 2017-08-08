@@ -3,13 +3,15 @@
     <div class="hamburger">
       {{ menuIcon }}
     </div>
-    <div class="overlay" v-if="opened">
-      <nuxt-link class="link" to='/'>Home</nuxt-link>
-      <nuxt-link class="link" to='/sejarah'>Sejarah</nuxt-link>
-      <nuxt-link class="link" to='/prestasi'>Prestasi</nuxt-link>
-      <nuxt-link class="link" to='/anggota'>Anggota</nuxt-link>
-      <nuxt-link class="link" to='/artikel'>Artikel</nuxt-link>
-    </div>
+    <transition name="fade">
+      <div class="overlay" v-if="opened">
+        <nuxt-link class="link" to='/'>Home</nuxt-link>
+        <nuxt-link class="link" to='/sejarah'>Sejarah</nuxt-link>
+        <nuxt-link class="link" to='/prestasi'>Prestasi</nuxt-link>
+        <nuxt-link class="link" to='/anggota'>Anggota</nuxt-link>
+        <nuxt-link class="link" to='/artikel'>Artikel</nuxt-link>
+      </div>
+    </transition>
   </nav>
 </template>
 
@@ -62,5 +64,21 @@ export default {
   text-align: center;
   text-decoration: none;
   font-size: 2rem;
+}
+
+
+/*animation  */
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s
+}
+
+.fade-enter,
+.fade-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+{
+  opacity: 0
 }
 </style>
