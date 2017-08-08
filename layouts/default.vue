@@ -4,15 +4,18 @@
     <div class="wrapper">
       <nuxt/>
     </div>
+    <Foot />
   </div>
 </template>
 
 <script>
 import Navigation from '~/components/Navigation.vue'
+import Foot from '~/components/Foot.vue'
 
 export default {
   components: {
-    Navigation
+    Navigation,
+    Foot
   }
 }
 </script>
