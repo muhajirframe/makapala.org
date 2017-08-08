@@ -1,7 +1,11 @@
 <template>
   <nav class="navbar" @click="opened = !opened">
     <div class="hamburger">
-      {{ menuIcon }}
+      <transition name="slidex" mode="out-in">
+        <span :key="opened">
+          {{ opened ? '⨯' : '☰' }}
+        </span>
+      </transition>
     </div>
     <transition name="fade">
       <div class="overlay" v-if="opened">
@@ -21,13 +25,8 @@ export default {
     return {
       opened: false
     }
-  },
-  computed: {
-    menuIcon () {
-      return this.opened ? '⨯' : '☰'
     }
   }
-}
 </script>
 
 
@@ -77,9 +76,19 @@ export default {
 }
 
 .fade-enter,
-.fade-leave-to
-{
+.fade-leave-to {
   opacity: 0;
   transform: translateY(10px)
+}
+
+.slidex-enter-active,
+.slidex-leave-active {
+  transition: transform .5s ease, opacity .5s ease;
+}
+
+.slidex-enter,
+.slidex-leave-to {
+  opacity: 0;
+  transform: translateX(10px)
 }
 </style>
