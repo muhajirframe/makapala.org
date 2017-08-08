@@ -49,7 +49,6 @@ export default {
 .overlay {
   height: 100vh;
   padding: 3rem 0;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

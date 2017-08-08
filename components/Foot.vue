@@ -10,7 +10,6 @@
   bottom: 0;
   width: 100%;
 
-  box-sizing: border-box;
   padding: 2rem 3rem;
 
   font-weight: 300;
