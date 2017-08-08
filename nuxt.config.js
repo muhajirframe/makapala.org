@@ -11,8 +11,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Makapala Official Website' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { href:'"https://fonts.googleapis.com/css?family=Roboto:300,400,700', rel:'stylesheet'}
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   /*
@@ -28,7 +27,7 @@ module.exports = {
   */
   build: {
     postcss: [
-
+      require('postcss-font-magician'),
       require('postcss-nested')(),
       require('postcss-responsive-type')()
     ],
