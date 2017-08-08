@@ -14,6 +14,8 @@
 
   font-weight: 300;
   font-size: 1rem;
+
+  background-color: #fff;
 }
 </style>
 
