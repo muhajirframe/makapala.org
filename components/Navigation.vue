@@ -5,10 +5,10 @@
     </div>
     <div class="overlay" v-if="opened">
       <nuxt-link class="link" to='/'>Home</nuxt-link>
-      <nuxt-link class="link" to='/'>Sejarah</nuxt-link>
-      <nuxt-link class="link" to='/'>Prestasi</nuxt-link>
-      <nuxt-link class="link" to='/'>Anggota</nuxt-link>
-      <nuxt-link class="link" to='/'>Artikel</nuxt-link>
+      <nuxt-link class="link" to='/sejarah'>Sejarah</nuxt-link>
+      <nuxt-link class="link" to='/prestasi'>Prestasi</nuxt-link>
+      <nuxt-link class="link" to='/anggota'>Anggota</nuxt-link>
+      <nuxt-link class="link" to='/artikel'>Artikel</nuxt-link>
     </div>
   </nav>
 </template>
