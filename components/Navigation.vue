@@ -45,6 +45,8 @@ export default {
 
   font-size: 2rem;
   text-align: right;
+
+  cursor: pointer;
 }
 
 .overlay {
