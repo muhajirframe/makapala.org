@@ -36,7 +36,7 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 100;
 }
 
 .hamburger {
@@ -49,6 +49,8 @@ export default {
   text-align: right;
 
   cursor: pointer;
+
+  z-index: 200;
 }
 
 .overlay {
