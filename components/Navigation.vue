@@ -68,6 +68,8 @@ export default {
   text-align: center;
   text-decoration: none;
   font-size: 2rem;
+
+  color: inherit;
 }
 
 /*animation  */
