@@ -9,6 +9,9 @@
           <h3 class="nyawa">Nyawa</h3>
         </div>
       </div>
+      <button class="btn">
+        DAFTAR
+      </button>
     </div>
   </section>
 </template>
@@ -47,5 +50,17 @@
     font-size: 1rem;
     font-weight: 300;
   }
+}
+
+.btn {
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+
+  cursor: pointer;
+
+  border-radius: 4px;
+
+  font-weight: 500;
 }
 </style>
