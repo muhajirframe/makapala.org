@@ -17,6 +17,20 @@ module.exports = {
   /*
   ** Build configuration
   */
+  manifest: {
+    name: 'Makapala',
+    short_name: 'Makapala',
+    description: 'Makapala Official Website',
+    start_url: '/',
+    display: 'standalone',
+    theme_color: '#fff'
+  },
+  modules: [
+    '@nuxtjs/pwa'
+  ],
+  /*
+  ** Build configuration
+  */
   build: {
     postcss: [
       require('postcss-font-magician'),
