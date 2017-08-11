@@ -67,15 +67,22 @@
 </style>
 
 <script>
-import { TweenMax } from 'gsap'
+import { TimelineLite } from 'gsap'
 export default {
   mounted () {
-    TweenMax.staggerFrom('.stag', 1, {
-      opacity: 0,
-      x: 20,
-      ease: 'Power1.easeOut',
-      delay: 0.5
-    }, 0.3)
+    const tl = new TimelineLite()
+    tl
+      .staggerFrom('.stag', 1, {
+        opacity: 0,
+        x: 20,
+        ease: 'Power1.easeOut',
+        delay: 0.5
+      }, 0.3)
+      .from('.btn', 1, {
+        opacity: 0,
+        x: 20,
+        ease: 'Power1.easeOut'
+      })
   }
 }
 </script>
