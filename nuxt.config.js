@@ -23,6 +23,9 @@ module.exports = {
       require('postcss-nested')(),
       require('postcss-responsive-type')()
     ],
+    vendor: [
+      'gsap'
+    ],
     /*
     ** Run ESLINT on save
     */
