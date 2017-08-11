@@ -1,8 +1,4 @@
 module.exports = {
-  /*
-  ** Headers of the page
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic' }
-  */
   head: {
     title: 'Makapala',
     meta: [
@@ -14,10 +10,6 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  /*
-  ** Add plugins
-  */
-  // plugins: ['~/plugins/buefy'],
   /*
   ** Customize the progress-bar color
   */
