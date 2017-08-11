@@ -1,12 +1,13 @@
 <template>
   <section class="container">
     <div class="heading">
-      <h1 class="title">Makapala</h1>
-      <div class="subtitle">
+      <h1 id="title"
+          class="title stag">Makapala</h1>
+      <div class="subtitle stag">
         <h2>Satu</h2>
         <div class="timnyawa">
-          <h3 class="tim">Tim</h3>
-          <h3 class="nyawa">Nyawa</h3>
+          <h3 class="tim stag">Tim</h3>
+          <h3 class="nyawa stag">Nyawa</h3>
         </div>
       </div>
       <button class="btn">
@@ -64,3 +65,17 @@
   font-weight: 500;
 }
 </style>
+
+<script>
+import { TweenMax } from 'gsap'
+export default {
+  mounted () {
+    TweenMax.staggerFrom('.stag', 1, {
+      opacity: 0,
+      x: 20,
+      ease: 'Power1.easeOut',
+      delay: 0.5
+    }, 0.3)
+  }
+}
+</script>
