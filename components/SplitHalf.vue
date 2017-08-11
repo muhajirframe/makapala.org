@@ -1,9 +1,10 @@
 <template>
   <div class="wrapper">
-    <div class="title">
+    <div id="title" class="title">
       <h1>{{ title }}</h1>
     </div>
-    <div class="text">
+    <div class="text"
+         id="text">
       <slot></slot>
     </div>
   </div>
@@ -17,6 +18,7 @@
   height: 100%;
   width: 100%;
 }
+
 .title {
   text-align: center;
   padding-top: 3rem;
@@ -25,6 +27,7 @@
     font-size: 2rem;
   }
 }
+
 .text {
   overflow: scroll;
   padding: 2rem 3rem;
@@ -37,7 +40,7 @@
   .wrapper {
     flex-direction: row;
   }
-  .title{
+  .title {
     padding: 0;
     width: 40%;
     display: flex;
@@ -47,12 +50,29 @@
   }
   .text {
     font-size: 1rem;
-      letter-spacing: 0.1rem;
+    letter-spacing: 0.1rem;
   }
 }
 </style>
- <script>
- export default {
-   props: ['title']
- }
- </script>
+<script>
+import { TimelineLite } from 'gsap'
+export default {
+  mounted () {
+    const text = document.getElementById('text').children
+    const tl = new TimelineLite()
+    tl
+      .from('#title', 1, {
+        opacity: 0,
+        x: 20,
+        ease: 'Power1.easeOut',
+        delay: 0.5
+      })
+      .staggerFrom(text, 1, {
+        opacity: 0,
+        y: 20,
+        ease: 'Power1.easeOut'
+      }, 0.3, '-=0.3')
+  },
+  props: ['title']
+}
+</script>
